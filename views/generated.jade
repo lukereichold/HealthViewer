@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  .page-header
+    h2 Your Unique Email Address
+
+  .row
+    .col-sm-12
+      p Your unique email is 
+        b #{uniqueID}@healthviewer.com
+      p 
+        | Export your iOS Health data to this address, then visit 
+        a(href="/viewer/#{uniqueID}") healthviewer.com/viewer/#{uniqueID}
+        |  (Coming Soon) in the next 24 hours to view your data.
